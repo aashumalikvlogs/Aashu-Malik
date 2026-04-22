@@ -24,45 +24,70 @@
             margin: 0;
             font-size: 3rem;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         header p {
             font-size: 1.2rem;
             opacity: 0.9;
+            margin-top: 10px;
         }
 
         .container {
             padding: 40px 20px;
-            max-width: 900px;
+            max-width: 800px;
             margin: auto;
         }
 
+        /* Profile Image Styles - Updated for your photo */
         .profile-img {
             width: 180px;
             height: 180px;
             border-radius: 50%;
             border: 5px solid white;
-            margin-top: -90px;
+            margin-top: -90px; /* Moves image up over the header */
             background-color: #333;
+            object-fit: cover; /* Ensures photo doesn't stretch */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
 
         .section {
             margin: 40px 0;
-            padding: 20px;
+            padding: 30px;
             background: #252525;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
 
+        .section h2 {
+            color: #ff4b2b;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        /* Social Media Buttons Style */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
         .btn {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 12px 20px;
             background: #ff4b2b;
             color: white;
             text-decoration: none;
             border-radius: 25px;
-            margin-top: 15px;
+            font-weight: bold;
             transition: 0.3s;
+            font-size: 0.9rem;
         }
 
         .btn:hover {
@@ -70,10 +95,18 @@
             transform: scale(1.05);
         }
 
+        /* Custom colors for different platforms */
+        .btn-youtube { background-color: #bb0000; }
+        .btn-fb { background-color: #3b5998; }
+        .btn-insta { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
+        .btn-twitter { background-color: #00aced; }
+        .btn-pinterest { background-color: #cb2027; }
+
         footer {
             padding: 20px;
             font-size: 0.9rem;
             color: #888;
+            border-top: 1px solid #333;
         }
     </style>
 </head>
@@ -84,28 +117,34 @@
         <p>AI Content Creator | YouTube Specialist</p>
     </header>
 
-    <img src="https://via.placeholder.com/180" alt="Aashu Malik" class="profile-img">
-
     <div class="container">
+        <img src="aashu_profile.jpg" alt="Aashu Malik Profile Photo" class="profile-img">
+
         <div class="section">
             <h2>Mere Baare Mein</h2>
-            <p>Namaste! Mera naam Aashu Malik hai. Main ek AI Content Creator hoon aur "Akhiri Message" jaise narrative video projects par kaam karta hoon.</p>
+            <p>
+                Namaste! Mera naam Aashu Malik hai. Main ek AI Content Creator hoon aur 
+                "Akhiri Message" jaise narrative video projects par kaam karta hoon. 
+                Mera junoon cutting-edge technology (AI) ka upyog karke aisi kahaniyan 
+                banana hai jo logon ko prerit karein aur unke dil ko chhu jayein.
+            </p>
         </div>
 
         <div class="section">
-            <h2>Mere Projects</h2>
-            <p>Main ultra-realistic portraits aur viral YouTube Shorts banane mein expert hoon.</p>
-            <a href="#" class="btn">Mera YouTube Channel Dekhein</a>
-        </div>
-
-        <div class="section">
-            <h2>Contact Karein</h2>
-            <p>Email: contact@aashumalik.com</p>
+            <h2>Mujhse Judein</h2>
+            <p>Mere naye projects aur updates ke liye mujhe follow karein:</p>
+            <div class="social-grid">
+                <a href="#" class="btn btn-youtube" target="_blank">YouTube</a>
+                <a href="#" class="btn btn-fb" target="_blank">Facebook</a>
+                <a href="#" class="btn btn-insta" target="_blank">Instagram</a>
+                <a href="#" class="btn btn-twitter" target="_blank">Twitter (X)</a>
+                <a href="#" class="btn btn-pinterest" target="_blank">Pinterest</a>
+            </div>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Aashu Malik. All Rights Reserved.
+        <p>&copy; 2023 Aashu Malik. All Rights Reserved.</p>
     </footer>
 
 </body>
