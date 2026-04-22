@@ -118,7 +118,7 @@
     </header>
 
     <div class="container">
-        <img src="aashu_profile.jpg" alt="Aashu Malik Profile Photo" class="profile-img">
+        <img src="1767637426015.jpg" alt="Aashu Malik Profile Photo" class="profile-img">
 
         <div class="section">
             <h2>Mere Baare Mein</h2>
